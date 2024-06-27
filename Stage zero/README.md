@@ -81,6 +81,42 @@ sudo yum install unzip && unzip file.zip
 ```
 ![Screenshot (321)](https://github.com/highbee2810/HNG_INTERNSHIP/assets/155490206/4bbe68fb-6b9c-4971-8b80-8ba2ad2b8030)
 
+**create a directory for the website**
+```
+sudo mkdir /var/www/html
+```
+**Edit the configuration server block of nginx to reflect the path to the website /var/www/html**
+```
+sudo vi /etc/nginx/nginx.conf
+```
+![Screenshot (322)](https://github.com/highbee2810/HNG_INTERNSHIP/assets/155490206/6f5361fd-5ebe-40ae-a6f7-7065dacc1fc3)
+
+
+**grant permission for nginx to access the website file**
+```
+sudo chown -R nginx:nginx /var/www/html
+sudo chmod -R 755 /var/www/html
+```
+If SELinux is enforcing, it might prevent Nginx from accessing files even if file permissions are correct. Check and set the correct SELinux context:
+```
+sudo chcon -R -t httpd_sys_content_t /var/www/html
+```
+**restart nginx**
+```
+sudo systemctl restart nginx
+```
+
+**Using the public ip-address the website is accessible**
+```
+54.85.212.29
+```
+![Screenshot (323)](https://github.com/highbee2810/HNG_INTERNSHIP/assets/155490206/2f00a520-926e-461f-b6c2-4a3c9b2018d7)
+
+
+# Conclusion:  
+This project aimed to deploy a static website on ec2 instance using nginx web server, I successfully hosted a static website template i downloaded and edited part of the html code. Key findings include configuration of nginx server and granting permission to access the website file, which helps to serve the website content.
+Reflecting on the project, I encountered challenges in specifying the partto the website file while configuring nginx but effectively addressed them by using pwd to know the present directory i am working on.
+In conclusion, the project has achieved deployment of static website on Ec2 and provided valuable insights into web server configuration.
 
 
 
