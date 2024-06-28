@@ -110,8 +110,8 @@ sudo systemctl restart nginx
 ```
 54.85.212.29
 ```
-![Screenshot (323)](https://github.com/highbee2810/HNG_INTERNSHIP/assets/155490206/2f00a520-926e-461f-b6c2-4a3c9b2018d7)
 
+![Screenshot (325)](https://github.com/highbee2810/HNG_INTERNSHIP/assets/155490206/fb8eff77-63b1-4a9c-acbe-b294b9b13622)
 
 # Conclusion:  
 This project aimed to deploy a static website on ec2 instance using nginx web server, I successfully hosted a static website template i downloaded and edited part of the html code. Key findings include configuration of nginx server and granting permission to access the website file, which helps to serve the website content.
