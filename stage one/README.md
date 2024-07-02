@@ -1,13 +1,13 @@
 # Stage one task: Documentation
-## create a log file in /var/log/user_management.log
+## Create a log file in /var/log/user_management.log
 ```
 sudo touch /var/log/user_management.log
 ```
-## create a file to save password in /var/secure/user_passwords.txt
+## Create a file to save password in /var/secure/user_passwords.txt
 ```
 sudo touch /var/secure/user_passwords.txt
 ```
-## create the create_users.sh that will read the text file that contain the employee's names and groups
+## Create the create_users.sh that will read the text file that contain the employee's names and groups
 ```
 vi create_users.sh
 ```
@@ -111,7 +111,7 @@ log_message "User and group creation process completed."
 
 exit 0
 ```
-## run the script 
+## Run the script 
 grant permission to ru the script
 ```
 chmod +x create_users.sh
