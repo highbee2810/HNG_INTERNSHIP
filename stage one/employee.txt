@@ -1,5 +1,0 @@
-John; IT,ADMIN
-Tolu; ADMIN
-Maryam; MARKETING
-Ayo; IT
-Wale; ADMIN,MARKETING
